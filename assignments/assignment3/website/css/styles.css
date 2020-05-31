@@ -1,0 +1,438 @@
+/*imorted google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto&display=swap');
+
+:root {
+    --gold-white: #EADFCB;
+    --primary-color: #1E1E20;
+    --grey-white: #F5F5F5;
+    --full-white: #FFFFFF;
+    --roboto: "Roboto", sans-serif;
+    --karla: "Karla", sans-serif;
+    --karla-bold: "Karla", bold;
+}
+
+.sticky {
+    z-index: 99;
+    width: 100%;
+    position: fixed;
+}
+
+
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.bg-primary-color {
+    background-color: var(--primary-color) !important;
+}
+
+.text-color {
+    color: var(--primary-color);
+}
+
+.font-roboto {
+    font-family: var(--roboto);
+}
+
+.goldwhite {
+    color: var(--gold-white);
+}
+
+/*header*/
+header {
+    background-color: var(--full-white);
+    font-family: var(--karla);
+}
+
+header .site-title {
+    font-family: var(--roboto);
+
+}
+
+
+
+
+.header-links a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.navbar-nav {
+    margin: auto;
+
+
+
+}
+
+
+
+.colorundernav-fluid {
+    background-color: var(--gold-white);
+    width: 100%;
+    height: 1.2em;
+
+}
+
+.mainbox {
+    width: 100%;
+    height: auto;
+    background-color: var(--grey-white);
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+.boxwithphoto {
+    width: 76vw;
+    margin: 0 auto;
+    background-color: 20%;
+    padding-top: 4%;
+    background-color: var(--grey-white);
+
+}
+
+h2 span {
+    color: white;
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    /* for IE 6 */
+}
+
+h2 {
+    position: absolute;
+    top: 187px;
+    left: 0;
+    width: 23%;
+    color: var(--primary-color);
+    background-color: var(--full-white);
+    font-size: 11pt;
+    padding: 2%;
+    margin-left: 3%;
+    margin-top: 18%;
+}
+
+h3 {
+    padding-top: 2%;
+}
+
+
+.imgContainer {
+    float: left;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.image123 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-family: var(--karla);
+    font-size: 25px;
+    padding: 0.5vw;
+}
+
+.image123 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.mainbox2 {
+    width: 100%;
+    height: auto;
+    background-color: var(--full-white);
+
+    padding-bottom: 10vh;
+}
+
+
+.infotext {
+    margin: 2%;
+
+    width: 71%;
+    margin: auto;
+    margin-top: 5%;
+
+}
+
+p {
+    padding-top: 1%;
+    font-family: var(--karla);
+}
+
+h4 {
+    font-family: var(--roboto);
+}
+
+.page-footer {
+    background-color: var(--gold-white);
+}
+
+.footer-copyright {
+    color: var(--primary-color);
+}
+
+.col-md-4 {
+    margin-left: -1.3vw;
+}
+
+.my-md-3 {
+    margin-left: 3vw;
+}
+
+#cartanduseer {
+    margin-left: 1vw;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.mainboxCARDS {
+    padding-top: 25vh;
+    /* zorgt ervoor dat het niet in je nav staat je nav is niet goed gesloten waardoor ie erin staat geen idee waar de fout is zoek die zelf dan kan je dit weg halen en gewoon padding-bottom in je nav doen */
+    background-color: var(--grey-white);
+}
+
+
+
+
+
+
+.containerCARDS {
+    height: auto;
+    width: 75%;
+    margin: auto;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin-bottom: 10vh;
+}
+
+
+.CARD {
+    width: 20%;
+    height: 300px;
+    
+    margin: 20px;
+}
+
+
+
+/* responsive mobiel */
+
+@media only screen and (max-width: 520px) {
+   
+    
+    .CARD {
+        width: 80%;
+    }
+
+    .mainbox2 {
+        width: 100%;
+        height: auto;
+        background-color: var(--full-white);
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        font-family: var(--karla);
+        font-size: 12pt;
+        padding: 0.5vw;
+    }
+
+    h2 {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 50%;
+        color: var(--primary-color);
+        background-color: var(--full-white);
+        font-size: 11pt;
+        padding: 2%;
+        margin-left: 3%;
+        margin-top: 18%;
+    }
+
+    .boxwithphoto{
+        margin-top: 10vh;
+        margin-bottom: -10vh;
+    }
+
+    
+}
+
+/* --- Mediascreen ipad ---  */
+
+
+
+@media only screen and (max-width: 1130px) {
+    .CARD {
+        width: 80%;
+    }
+
+}
+
+
+.CARDINFO{
+    height: 25%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   text-align: center;
+   overflow: hidden;
+
+}
+
+h5{
+    text-align: center;
+
+font-size: 18px;
+padding-top: 2%;
+font-size: 0.9em;
+
+color: var(--primary-color);
+}
+
+.filtermenu{
+    width: 100%;
+    height: 30%;
+    background-color: red;
+}
+
+.detailpagemaine{
+    width: 100%;
+    height: auto;
+    background-color: var(--grey-white);
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+
+/* --- detailpage ---  */
+
+.detailcontainer{ 
+    padding: 13%;
+}
+
+.newarrival{
+    background: var(--gold-white);
+    width: 17%;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 2%;
+}
+
+.title{
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+.stars{
+    height: 17%;
+
+}
+
+.price{
+    color: var(--primary-color);
+    font-size: 100px;
+    font: var(--karla-bold);
+    font-weight: bold;
+}
+
+input{
+    border: 1px solid var(--primary-color);
+   
+    height: 30px;
+    width: 30px;
+}
+
+.cart{
+    background: var(--gold-white);
+    color: white;
+    font-size: 16px;
+
+}
+
+.space{
+    height: 16%;
+    
+}
+
+
+y{
+font-size: 30px;
+}
+
+/*-- contactpage --*/
+
+.infocontact {
+    margin: 2%;
+height: auto;
+    width: 71%;
+    margin: auto;
+    padding-top: 16%;
+
+}
+
+.infocontact2 {
+    margin: 2%;
+background: #F5F5F5;
+    width: 71%;
+    margin: auto;
+    padding: 7%;
+margin-top: 12%;
+}
+
+p{}
+
+.pagenumbering{
+    margin: auto;
+    text-align: center;
+vertical-align: middle;
+line-height: 90px;  
+
+}
+
+@media only screen and (max-width: 520px) {
+
+    .infocontact {
+        margin: 2%;
+    height: auto;
+        width: 71%;
+        margin: auto;
+    padding-top: 37vh;
+
+    }
